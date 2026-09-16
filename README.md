@@ -8,6 +8,19 @@
 
 A hands-on, step-by-step training for learning Git and GitHub using VSCode and the terminal side by side. No prior Git experience required — just follow the labs in order.
 
+## Prerequisites
+
+Before starting, make sure you have:
+
+- **Git** installed — check with `git --version`
+- **VSCode** installed, with the integrated terminal enabled
+- A **GitHub account**, and Git configured with your identity:
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "you@example.com"
+  ```
+- Basic comfort typing commands in a terminal (no scripting knowledge needed)
+
 ## How to use this training
 
 1. Open this repo in VSCode.
@@ -33,5 +46,29 @@ Each lab README contains the exact terminal commands and VSCode actions needed t
 
 ## Contributing
 
-Found a typo or a step that doesn't work as written? Open an issue or a pull request — this is a training resource, and corrections make it better for the next learner.
+Found a typo or a step that doesn't work as written? Contributions are welcome — and going through the flow below is itself good practice for everything taught in these labs.
+
+1. **Fork** this repo (button, top right of the GitHub page).
+2. **Clone** your fork locally:
+   ```bash
+   git clone https://github.com/<your-username>/Basic-Git-and-Github-Training.git
+   cd Basic-Git-and-Github-Training
+   ```
+3. **Create a branch** for your change:
+   ```bash
+   git checkout -b fix/short-description
+   ```
+4. Make your edits, then **stage and commit**:
+   ```bash
+   git add .
+   git commit -m "docs: describe your change here"
+   ```
+5. **Push** the branch to your fork:
+   ```bash
+   git push origin fix/short-description
+   ```
+6. Open a **pull request** from your branch into this repo's `main` branch, with a short description of what you changed and why.
+
+Small, focused pull requests are easier to review and merge — one fix or one addition per PR.
+
 Thank You !
