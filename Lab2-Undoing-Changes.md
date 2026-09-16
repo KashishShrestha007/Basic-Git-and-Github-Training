@@ -7,6 +7,7 @@ Git has four different "undo" commands and picking the wrong one is how people l
 | Your situation | Command | What survives |
 |---|---|---|
 | Edited a file, not committed yet, want the old version back | `git restore <file>` | Your edits are **gone** |
+| Staged a file (`git add`) by mistake, not committed yet, want it unstaged | `git restore --staged <file>` | Your edits stay, just unstaged |
 | Bad commit already pushed to GitHub / shared with teammates | `git revert HEAD` | Everything — history is kept, a new commit undoes it |
 | Committed too early, want to fix the message or add a file | `git reset --soft HEAD~1` | Your changes, still staged |
 | Commit is garbage and nobody else has it | `git reset --hard HEAD~1` | Nothing — commit **and** changes are gone |
@@ -36,6 +37,21 @@ git restore hello.txt
 ```
 
 Now open `hello.txt` in VSCode — the bad line is gone ✅
+
+## Step 8.5 — Unstage a File (restore --staged)
+
+> **Use it when:** you ran `git add` on a file (it's now staged, green in `git status`) but you haven't committed yet, and you want it back to unstaged — without losing your edits.
+> **Real example:** you meant to `git add hello.txt` but typed `git add .` and staged a file you weren't ready to commit. `git restore --staged <file>` takes it out of staging; your changes are still there in the file.
+
+Terminal:
+
+```bash
+git add hello.txt
+git status                     # file shows staged (green)
+
+git restore --staged hello.txt
+git status                     # file shows unstaged (red) — edits untouched ✅
+```
 
 ## Step 9 — Undo Last Commit (revert)
 
