@@ -42,5 +42,20 @@ git tag -d v1.0.0                       # delete locally
 git push origin --delete v1.0.0        # delete from GitHub
 ```
 
+## Verify a Release Tag
+
+Before publishing a release, confirm that the tag points to the intended commit:
+
+```bash
+git show v1.0.0
+git log -1 --oneline v1.0.0
+```
+
+To push only this release tag instead of every local tag:
+
+```bash
+git push origin refs/tags/v1.0.0
+```
+
 ---
 Next: [Lab 7 — Inspection & Utilities](Lab7-Inspection-Utilities.md)
