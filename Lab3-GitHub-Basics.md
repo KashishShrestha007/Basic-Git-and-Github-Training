@@ -29,6 +29,11 @@ git push -u origin main
 
 Refresh GitHub in browser — your files are live ✅
 
+To force push:
+```bash
+git push --force origin main
+```
+
 ## Step 14 — Clone a Repo
 
 > **Use it when:** the project already exists on GitHub and you want a copy on this machine — joining a team's project, setting up a second laptop, or grabbing someone's open-source code.
