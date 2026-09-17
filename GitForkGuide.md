@@ -26,7 +26,7 @@ git diff
 
 ## 5. Stage and commit
 ```bash
-git add HOW_TO_CREATE_A_PR.md
+git add GitForkGuide.md
 git commit -m "Add guide: how to create a pull request"
 ```
 
