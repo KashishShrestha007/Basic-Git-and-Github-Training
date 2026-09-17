@@ -143,17 +143,17 @@ dist/
 
 Why use it ?
 
-🔒 Protect secrets: .env may contain API keys and passwords.
-📦 Avoid unnecessary files: node_modules/ can contain thousands of dependency files.
-🧹 Keep the repository clean: Ignore logs, build files, and temporary files.
+**Protect secrets**: .env may contain API keys and passwords.
+**Avoid unnecessary files**: node_modules/ can contain thousands of dependency files.
+**Keep the repository clean**: Ignore logs, build files, and temporary files.
 
 Example project:
 project/
-├── index.js       ✅ tracked
-├── package.json   ✅ tracked
-├── .env           ❌ ignored
-├── node_modules/  ❌ ignored
-└── error.log      ❌ ignored
+├── index.js        tracked
+├── package.json    tracked
+├── .env            ignored
+├── node_modules/   ignored
+└── error.log       ignored
 
 Important : .gitignore only prevents untracked files from being added. It does not automatically stop tracking a file that was already committed
 
