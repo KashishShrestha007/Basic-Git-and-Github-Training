@@ -15,6 +15,8 @@ cd Basic-Git-and-Github-Training
 Never work directly on `main` — always branch first.
 ```bash
 git checkout -b add-pr-guide
+example:
+git checkout -b feature/login-system
 ```
 
 ## 4. Make your change
