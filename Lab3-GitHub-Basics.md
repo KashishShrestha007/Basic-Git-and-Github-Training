@@ -29,7 +29,10 @@ git push -u origin main
 
 Refresh GitHub in browser — your files are live ✅
 
-To force push:
+Terminal:
+
+When force push the code
+
 ```bash
 git push --force origin main
 ```
